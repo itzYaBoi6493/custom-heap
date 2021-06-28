@@ -22,12 +22,10 @@ mod tests {
         let mut v = Vec::<i32>::new();
         for i in 1..=10 {
             h.insert(i);
-            println!("{:?}", h.arr);
         }
 
         while !h.is_empty() {
             v.push(h.extract_min().unwrap());
-            println!("{:?}", h.arr);
         }
 
         let mut next = &v[0];
