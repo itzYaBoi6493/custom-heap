@@ -1,7 +1,7 @@
 use std::cmp::Ordering;
 
 pub struct Heap<T> {
-    arr: Vec<T>,
+    pub arr: Vec<T>,
     comp: Box<dyn Fn(&T, &T) -> Ordering>,
     n: usize,
 }
